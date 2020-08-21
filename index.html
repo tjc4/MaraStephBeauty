@@ -12,14 +12,17 @@
 <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
 <link rel="alternate" type="application/rss+xml" title="Mara Steph Beauty &raquo; Feed" href="https://marastephbeauty.com/feed/">
 <link rel="alternate" type="application/rss+xml" title="Mara Steph Beauty &raquo; Comments Feed" href="https://marastephbeauty.com/comments/feed/">
+<link rel="stylesheet" id="arasari_instafeed-css" href="https://marastephbeauty.com/wp-content/plugins/Serverless-Instafeed-Wordpress-Version/assets/instafeed.css?ver=5.5" type="text/css" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="https://marastephbeauty.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5" type="text/css" media="all">
 <link rel="stylesheet" id="wp-block-library-theme-css" href="https://marastephbeauty.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.5" type="text/css" media="all">
-<link rel="stylesheet" id="fl-builder-layout-7-css" href="https://marastephbeauty.com/wp-content/uploads/bb-plugin/cache/7-layout.css?ver=0c5b20329f4a2f00e80981426bbef379" type="text/css" media="all">
+<link rel="stylesheet" id="fl-builder-layout-7-css" href="https://marastephbeauty.com/wp-content/uploads/bb-plugin/cache/7-layout.css?ver=14e8a07d30b91c219beed7f383b5fc36" type="text/css" media="all">
 <link rel="stylesheet" id="jquery-magnificpopup-css" href="https://marastephbeauty.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.2.3" type="text/css" media="all">
 <link rel="stylesheet" id="base-css" href="https://marastephbeauty.com/wp-content/themes/bb-theme/css/base.min.css?ver=1.7.2" type="text/css" media="all">
 <link rel="stylesheet" id="fl-automator-skin-css" href="https://marastephbeauty.com/wp-content/uploads/bb-theme/skin-5f3cc322e10a2.css?ver=1.7.2" type="text/css" media="all">
 <link rel="stylesheet" id="fl-child-theme-css" href="https://marastephbeauty.com/wp-content/themes/bb-theme-child/style.css?ver=5.5" type="text/css" media="all">
 <link rel="stylesheet" id="fl-builder-google-fonts-a12c63063297457449d31ff89b2226e5-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%7CNunito%3A300%2C400&amp;ver=5.5" type="text/css" media="all">
+<script type="text/javascript" src="https://marastephbeauty.com/wp-content/plugins/Serverless-Instafeed-Wordpress-Version/assets/vue.js?ver=5.5" id="arasari_vue-js"></script>
+<script type="text/javascript" src="https://marastephbeauty.com/wp-content/plugins/Serverless-Instafeed-Wordpress-Version/assets/instafeed.umd.min.js?ver=5.5" id="arasari_instafeed-js"></script>
 <script type="text/javascript" src="https://marastephbeauty.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" id="jquery-js"></script>
 <link rel="alternate" type="application/json" href="https://marastephbeauty.com/wp-json/wp/v2/pages/7">
 
@@ -30,8 +33,10 @@
 <link rel="icon" href="https://marastephbeauty.com/wp-content/uploads/2020/08/cropped-syringe-solid-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://marastephbeauty.com/wp-content/uploads/2020/08/cropped-syringe-solid-180x180.png">
 <meta name="msapplication-TileImage" content="https://marastephbeauty.com/wp-content/uploads/2020/08/cropped-syringe-solid-270x270.png">
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-<script src="/path/to/instafeed.umd.js"></script>
+<script id="fl-theme-custom-js">src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js
+src="/path/to/instafeed.umd.js
+instafeed.instamount();
+instafeed.instamount('#content');</script>
 <link href="https://marastephbeauty.com/path/to/instafeed.css" rel="stylesheet" type="text/css">
 </head>
 <body class="home page-template-default page page-id-7 fl-builder fl-framework-base fl-preset-default fl-full-width" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -514,10 +519,11 @@
 	</h2>
 	</div>
 </div>
-<div class="fl-module fl-module-html fl-node-5f3cc335493b5" data-node="5f3cc335493b5">
+<div class="fl-module fl-module-rich-text fl-node-5f3f9314d3f30" data-node="5f3f9314d3f30">
 	<div class="fl-module-content fl-node-content">
-		<div class="fl-html">
-	<insta-scroll hashtag="travel" speed="0.5" pause-on-hover size="320px"></insta-scroll></div>
+		<div class="fl-rich-text">
+	<p>[insta-slider username="mara.steph.beauty" gap="5" hover-effect="scale" clickable rounded count="5"]</p>
+</div>
 	</div>
 </div>
 	</div>
@@ -580,7 +586,7 @@
 </div>
 	</footer>
 		</div>
-<script type="text/javascript" src="https://marastephbeauty.com/wp-content/uploads/bb-plugin/cache/7-layout.js?ver=0c5b20329f4a2f00e80981426bbef379" id="fl-builder-layout-7-js"></script>
+<script type="text/javascript" src="https://marastephbeauty.com/wp-content/uploads/bb-plugin/cache/7-layout.js?ver=14e8a07d30b91c219beed7f383b5fc36" id="fl-builder-layout-7-js"></script>
 <script type="text/javascript" src="https://marastephbeauty.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.2.3" id="jquery-throttle-js"></script>
 <script type="text/javascript" src="https://marastephbeauty.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.2.3" id="jquery-magnificpopup-js"></script>
 <script type="text/javascript" src="https://marastephbeauty.com/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.2" id="fl-automator-js"></script>
